@@ -14,4 +14,4 @@ It demonstrates the use of **semantic HTML**, simple navigation, and a basic boo
 - [Students reading books in a library](https://www.pexels.com/photo/students-reading-books-in-a-library-8926840/) — Photo from Pexels  
 - [Stacked books](https://images.pexels.com/photos/3922853/pexels-photo-3922853.jpeg) — Photo from Pexels  
 - [Programming Python Book](https://www.amazon.com/Programming-Python-Powerful-Object-Oriented/dp/0596158106) — Cover from Amazon  
-- [Event Image](https://x.com/i/events/1361884462674366464) — Screenshot from X (Twitter)  
+- [Novel Image](https://x.com/i/events/1361884462674366464) — Screenshot from X (Twitter)  
