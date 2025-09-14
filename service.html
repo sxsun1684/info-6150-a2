@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Service • Vallejo Public Library</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/service.css" />
+</head>
+<body>
+<header class="site">
+    <div class="container topbar">
+        <div class="brand">Vallejo Public Library</div>
+        <nav aria-label="Primary">
+            <ul>
+                <!-- Global navigation -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a aria-current="page" href="service.html">Service</a></li>
+                <!-- Placeholder links -->
+                <li><a href="javascript:void(0)">News</a></li>
+                <li><a href="javascript:void(0)">FAQ</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <!-- Member login section -->
+    <section aria-labelledby="login">
+        <h2 id="login">Member Login</h2>
+        <p>Please enter your library card number or email, and password to sign in.</p>
+
+        <form action="#" method="post">
+            <p>
+                <label for="username">Library Card Number or Email</label><br>
+                <input id="username" name="username" type="text" required>
+            </p>
+            <p>
+                <label for="password">Password</label><br>
+                <input id="password" name="password" type="password" required>
+            </p>
+            <p>
+                <label><input type="checkbox" name="remember"> Remember me</label>
+            </p>
+            <p><button type="submit">Login</button></p>
+        </form>
+
+        <p>Don’t have an account? <a href="#apply">Apply for a library card</a>.</p>
+    </section>
+
+    <!-- Library card application section -->
+    <section aria-labelledby="apply">
+        <h2 id="apply">Apply Online</h2>
+        <p>Fill out this form to request a Vallejo Public Library card.</p>
+
+        <form action="#" method="post" aria-describedby="help">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <p>
+                    <label for="name">Full Name</label><br>
+                    <input id="name" name="name" required>
+                </p>
+                <p>
+                    <label for="email">Email</label><br>
+                    <input id="email" name="email" type="email" required>
+                </p>
+                <p>
+                    <label for="phone">Phone</label><br>
+                    <input id="phone" name="phone" type="tel" placeholder="(optional)">
+                </p>
+                <p>
+                    <label for="address">Address</label><br>
+                    <input id="address" name="address" required>
+                </p>
+            </fieldset>
+
+            <p><button type="submit">Submit Application</button></p>
+            <p id="help">After approval, you can use your card number to place holds on books.</p>
+        </form>
+
+        <p>Questions? Email <a href="mailto:info@vallejo-library.example">info@vallejo-library.example</a>.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Vallejo Public Library</p>
+</footer>
+</body>
+</html>

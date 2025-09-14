@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Books • Vallejo Public Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="catalog">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site">
+    <div class="container topbar">
+        <div class="brand">Vallejo Public Library</div>
+        <nav aria-label="Primary">
+            <ul>
+                <!-- Navigation links for main pages -->
+                <li><a href="index.html">Home</a></li>
+                <li><a aria-current="page" href="books.html">Books</a></li>
+                <li><a href="service.html">Service</a></li>
+                <!-- Placeholder links (disabled) -->
+                <li><a href="javascript:void(0)">News</a></li>
+                <li><a href="javascript:void(0)">FAQ</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main id="main" class="container">
+    <!-- Page title and search bar -->
+    <section class="section" aria-labelledby="books">
+        <h1 id="books">Books</h1>
+
+        <!-- Search form for title / author / ISBN -->
+        <div class="card" style="margin-bottom:12px">
+            <label for="q">Search</label>
+            <input id="q" placeholder="Title / Author / ISBN" autocomplete="off">
+        </div>
+    </section>
+
+    <!-- Book catalog / Recommended reads -->
+    <section class="section" aria-labelledby="reco">
+        <h2 id="reco">Recommended Reads</h2>
+        <div class="grid cols-3">
+
+            <!-- Book card 1 -->
+            <article class="card book-card">
+                <figure>
+                    <img class="cover"
+                         src="assets/img/python.jpg"
+                         alt="Cover of 'The C Programming Language'"
+                         width="200" height="280" loading="lazy" decoding="async">
+                    <figcaption class="sr-only">Book cover</figcaption>
+                </figure>
+
+                <h3 itemprop="name">Python Programming Intro</h3>
+                <p><strong>Author:</strong> <span itemprop="author">Martin &amp; Xu</span></p>
+
+                <!-- Book details -->
+                <div class="meta">
+                    <dl>
+                        <dt>ISBN</dt><dd itemprop="isbn">978-0131103627</dd>
+                        <dt>Categories</dt><dd><span itemprop="genre">Computer Science</span></dd>
+                    </dl>
+                </div>
+
+                <!-- Availability info -->
+                <p class="avail">
+                    <strong>Available:</strong>
+                    <data value="2">2</data> / <data value="6">6</data>
+                </p>
+                <p>
+                    <meter min="0" max="6" value="2" aria-label="Availability">2 of 6</meter>
+                </p>
+
+                <!-- Actions -->
+                <div class="book-actions">
+                    <a class="btn" href="javascript:void(0)">Reserve</a>
+                    <a class="btn secondary" href="javascript:void(0)">Details</a>
+                </div>
+            </article>
+
+            <!-- Book card 2 -->
+            <article class="card book-card" itemscope itemtype="https://schema.org/Book">
+                <figure>
+                    <img class="cover"
+                         src="assets/img/ml.jpg"
+                         alt="Cover of 'Introduction to Algorithms'"
+                         width="200" height="280" loading="lazy" decoding="async">
+                    <figcaption class="sr-only">Book cover</figcaption>
+                </figure>
+
+                <h3 itemprop="name">Machine Learning System Design</h3>
+                <p><strong>Author:</strong> <span itemprop="author">Alex &amp; Xu</span></p>
+
+                <!-- Book details -->
+                <div class="meta">
+                    <dl>
+                        <dt>ISBN</dt><dd itemprop="isbn">978-0262046305</dd>
+                        <dt>Categories</dt><dd><span itemprop="genre">Computer Science</span></dd>
+                    </dl>
+                </div>
+
+                <!-- Availability info -->
+                <p class="avail">
+                    <strong>Available:</strong>
+                    <data value="0">0</data> / <data value="4">4</data>
+                </p>
+                <p>
+                    <meter min="0" max="4" value="0" aria-label="Availability">0 of 4</meter>
+                </p>
+
+                <!-- Actions -->
+                <div class="book-actions">
+                    <!-- Disabled link for out-of-stock -->
+                    <a class="btn" href="javascript:void(0)" aria-disabled="true">Join Waitlist</a>
+                    <a class="btn secondary" href="javascript:void(0)">Details</a>
+                </div>
+            </article>
+
+            <!-- Book card 3 -->
+            <article class="card book-card">
+                <figure>
+                    <img class="cover"
+                         src="assets/img/literature.jpg"
+                         alt="The Great Gatsby"
+                         width="200" height="280" loading="lazy" decoding="async">
+                    <figcaption class="sr-only">Book cover</figcaption>
+                </figure>
+
+                <h3 itemprop="name">The Great Gatsby</h3>
+                <p><strong>Author:</strong> <span itemprop="author">F. Scott Fitzgerald</span></p>
+
+                <!-- Book details -->
+                <div class="meta">
+                    <dl>
+                        <dt>ISBN</dt><dd itemprop="isbn">978-0132350884</dd>
+                        <dt>Categories</dt><dd><span itemprop="genre">Literature</span></dd>
+                    </dl>
+                </div>
+
+                <!-- Availability info -->
+                <p class="avail">
+                    <strong>Available:</strong>
+                    <data value="1">1</data> / <data value="3">3</data>
+                </p>
+                <p>
+                    <meter min="0" max="3" value="1" aria-label="Availability">1 of 3</meter>
+                </p>
+
+                <!-- Actions -->
+                <div class="book-actions">
+                    <a class="btn" href="javascript:void(0)">Reserve</a>
+                    <a class="btn secondary" href="javascript:void(0)">Details</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+</main>
+
+<footer class="site">
+    <div class="container">&copy; 2025 Vallejo Public Library</div>
+</footer>
+
+</body>
+</html>

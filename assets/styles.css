@@ -1,0 +1,274 @@
+/* assets/styles.css — lite 版本 */
+:root {
+    --bg: #fff;
+    --surface: #f8fafc;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --brand: #2563eb;
+    --brand-strong: #1d4ed8;
+    --border: #e5e7eb;
+    --radius: 12px;
+    --shadow: 0 6px 18px rgba(0, 0, 0, .06);
+}
+
+* {
+    box-sizing: border-box
+}
+
+html, body {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto;
+    color: var(--text);
+    background: var(--surface);
+}
+
+a {
+    color: var(--brand);
+    text-decoration: none
+}
+
+a:hover {
+    color: var(--brand-strong);
+    text-decoration: underline
+}
+
+img {
+    max-width: 100%;
+    display: block
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 24px
+}
+
+header.site {
+    background: var(--bg);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 10
+}
+
+/* Home: hero & gallery */
+.hero {
+    margin: 0;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.hero figcaption {
+    color: #6b7280;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.gallery {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 860px) {
+    .gallery {
+        grid-template-columns:1fr;
+    }
+}
+
+.gallery figure {
+    margin: 0;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* A11y utility for visually hidden content (你用到了 class="sr-only") */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 1px, 1px);
+    white-space: nowrap;
+    border: 0;
+}
+
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px
+}
+
+.brand {
+    font-weight: 700
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap
+}
+
+nav a {
+    padding: 8px 10px;
+    border-radius: 10px
+}
+
+nav a[aria-current="page"] {
+    background: #e8f0ff
+}
+
+main {
+    min-height: 60vh
+}
+
+.section {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+    box-shadow: var(--shadow);
+    margin: 16px 0
+}
+
+.card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+    box-shadow: var(--shadow)
+}
+
+h1 {
+    font-size: 28px;
+    margin: 8px 0
+}
+
+h2 {
+    font-size: 22px;
+    margin: 8px 0
+}
+
+h3 {
+    font-size: 18px;
+    margin: 6px 0
+}
+
+.grid {
+    display: grid;
+    gap: 16px
+}
+
+.grid.cols-2 {
+    grid-template-columns:repeat(2, minmax(0, 1fr))
+}
+
+.grid.cols-3 {
+    grid-template-columns:repeat(3, minmax(0, 1fr))
+}
+
+@media (max-width: 860px) {
+    .grid.cols-2, .grid.cols-3 {
+        grid-template-columns:1fr
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-weight: 600;
+    background: var(--brand);
+    color: #fff;
+    border: 1px solid var(--brand);
+    cursor: pointer
+}
+
+.btn.secondary {
+    background: transparent;
+    color: var(--brand)
+}
+
+.btn:disabled, [aria-disabled="true"] {
+    opacity: .5;
+    cursor: not-allowed
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%
+}
+
+th, td {
+    border: 1px solid var(--border);
+    padding: 8px;
+    text-align: left
+}
+
+form label {
+    display: block;
+    margin: 8px 0 4px;
+    font-weight: 600
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: #fff
+}
+
+small.help {
+    color: var(--muted)
+}
+
+footer.site {
+    margin-top: 40px;
+    border-top: 1px solid var(--border);
+    padding: 24px 0;
+    color: var(--muted)
+}
+
+.hidden {
+    display: none !important
+}
+
+/* 可访问性 */
+.skip-link {
+    position: absolute;
+    left: -9999px
+}
+
+.skip-link:focus {
+    left: 8px;
+    top: 8px;
+    background: #000;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 8px
+}
+
+:focus-visible {
+    outline: 3px solid #94c1ff;
+    outline-offset: 2px
+}
