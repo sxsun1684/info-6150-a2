@@ -18,7 +18,7 @@
                 <!-- Navigation links for main pages -->
                 <li><a href="index.html">Home</a></li>
                 <li><a aria-current="page" href="books.html">Books</a></li>
-                <li><a href="service.html">Service</a></li>
+                <li><a href="login.html">Login</a></li>
                 <!-- Placeholder links (disabled) -->
                 <li><a href="javascript:void(0)">News</a></li>
                 <li><a href="javascript:void(0)">FAQ</a></li>
@@ -45,10 +45,10 @@
         <div class="grid cols-3">
 
             <!-- Book card 1 -->
-            <article class="card book-card">
+            <section class="card book-card">
                 <figure>
                     <img class="cover"
-                         src="assets/img/python.jpg"
+                         src="assets/img/python.png"
                          alt="Cover of 'The C Programming Language'"
                          width="200" height="280" loading="lazy" decoding="async">
                     <figcaption class="sr-only">Book cover</figcaption>
@@ -70,22 +70,19 @@
                     <strong>Available:</strong>
                     <data value="2">2</data> / <data value="6">6</data>
                 </p>
-                <p>
-                    <meter min="0" max="6" value="2" aria-label="Availability">2 of 6</meter>
-                </p>
 
                 <!-- Actions -->
                 <div class="book-actions">
                     <a class="btn" href="javascript:void(0)">Reserve</a>
                     <a class="btn secondary" href="javascript:void(0)">Details</a>
                 </div>
-            </article>
+            </section>
 
             <!-- Book card 2 -->
-            <article class="card book-card" itemscope itemtype="https://schema.org/Book">
+            <section class="card book-card" itemscope itemtype="https://schema.org/Book">
                 <figure>
                     <img class="cover"
-                         src="assets/img/ml.jpg"
+                         src="assets/img/ml.png"
                          alt="Cover of 'Introduction to Algorithms'"
                          width="200" height="280" loading="lazy" decoding="async">
                     <figcaption class="sr-only">Book cover</figcaption>
@@ -107,9 +104,6 @@
                     <strong>Available:</strong>
                     <data value="0">0</data> / <data value="4">4</data>
                 </p>
-                <p>
-                    <meter min="0" max="4" value="0" aria-label="Availability">0 of 4</meter>
-                </p>
 
                 <!-- Actions -->
                 <div class="book-actions">
@@ -117,13 +111,13 @@
                     <a class="btn" href="javascript:void(0)" aria-disabled="true">Join Waitlist</a>
                     <a class="btn secondary" href="javascript:void(0)">Details</a>
                 </div>
-            </article>
+            </section>
 
             <!-- Book card 3 -->
-            <article class="card book-card">
+            <section class="card book-card">
                 <figure>
                     <img class="cover"
-                         src="assets/img/literature.jpg"
+                         src="assets/img/literature.png"
                          alt="The Great Gatsby"
                          width="200" height="280" loading="lazy" decoding="async">
                     <figcaption class="sr-only">Book cover</figcaption>
@@ -141,20 +135,17 @@
                 </div>
 
                 <!-- Availability info -->
-                <p class="avail">
+                <div class="avail">
                     <strong>Available:</strong>
                     <data value="1">1</data> / <data value="3">3</data>
-                </p>
-                <p>
-                    <meter min="0" max="3" value="1" aria-label="Availability">1 of 3</meter>
-                </p>
+                </div>
 
                 <!-- Actions -->
                 <div class="book-actions">
                     <a class="btn" href="javascript:void(0)">Reserve</a>
                     <a class="btn secondary" href="javascript:void(0)">Details</a>
                 </div>
-            </article>
+            </section>
 
         </div>
     </section>
