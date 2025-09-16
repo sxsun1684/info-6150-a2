@@ -5,7 +5,7 @@ It demonstrates the use of **semantic HTML**, simple navigation, and a basic boo
 
 
 ## Website Map
-![Website Map](assets/img/sitemap.png)
+![Website Map](assets/img/sitemap.jpg)
 ## Diagram
 ![System Diagram](assets/img/diagram.jpg)
 
