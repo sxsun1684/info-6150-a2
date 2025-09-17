@@ -45,11 +45,11 @@
         <div class="grid cols-3">
 
             <!-- Book card 1 -->
-            <section class="card book-card">
+            <article class="card book-card" itemscope itemtype="https://schema.org/Book">
                 <figure>
                     <img class="cover"
                          src="assets/img/python.png"
-                         alt="Cover of 'The C Programming Language'"
+                         alt="Cover of 'The Python Programming Language'"
                          width="200" height="280" loading="lazy" decoding="async">
                     <figcaption class="sr-only">Book cover</figcaption>
                 </figure>
@@ -60,7 +60,7 @@
                 <!-- Book details -->
                 <section class="meta">
                     <dl>
-                        <dt>ISBN</dt><dd itemprop="isbn">978-0131103627</dd>
+                        <dt>ISBN</dt><dd itemprop="isbn">1234567890</dd>
                         <dt>Categories</dt><dd><span itemprop="genre">Computer Science</span></dd>
                     </dl>
                 </section>
@@ -76,10 +76,11 @@
                     <a class="btn" href="javascript:void(0)">Reserve</a>
                     <a class="btn secondary" href="javascript:void(0)">Details</a>
                 </div>
-            </section>
+            </article>
+
 
             <!-- Book card 2 -->
-            <section class="card book-card" itemscope itemtype="https://schema.org/Book">
+            <article class="card book-card" itemscope itemtype="https://schema.org/Book">
                 <figure>
                     <img class="cover"
                          src="assets/img/ml.png"
@@ -94,7 +95,7 @@
                 <!-- Book details -->
                 <section class="meta">
                     <dl>
-                        <dt>ISBN</dt><dd itemprop="isbn">978-0262046305</dd>
+                        <dt>ISBN</dt><dd itemprop="isbn">1234567891</dd>
                         <dt>Categories</dt><dd><span itemprop="genre">Computer Science</span></dd>
                     </dl>
                 </section>
@@ -111,10 +112,10 @@
                     <a class="btn" href="javascript:void(0)" aria-disabled="true">Join Waitlist</a>
                     <a class="btn secondary" href="javascript:void(0)">Details</a>
                 </div>
-            </section>
+            </article>
 
             <!-- Book card 3 -->
-            <section class="card book-card">
+            <article class="card book-card" itemscope itemtype="https://schema.org/Book">
                 <figure>
                     <img class="cover"
                          src="assets/img/literature.png"
@@ -129,7 +130,7 @@
                 <!-- Book details -->
                 <section class="meta">
                     <dl>
-                        <dt>ISBN</dt><dd itemprop="isbn">978-0132350884</dd>
+                        <dt>ISBN</dt><dd itemprop="isbn">1234567892</dd>
                         <dt>Categories</dt><dd><span itemprop="genre">Literature</span></dd>
                     </dl>
                 </section>
@@ -145,8 +146,7 @@
                     <a class="btn" href="javascript:void(0)">Reserve</a>
                     <a class="btn secondary" href="javascript:void(0)">Details</a>
                 </div>
-            </section>
-
+            </article>
         </div>
     </section>
 </main>
