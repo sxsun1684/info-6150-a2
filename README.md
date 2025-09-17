@@ -3,7 +3,11 @@
 This project is a prototype website for the Vallejo Public Library.  
 It demonstrates the use of **semantic HTML**, simple navigation, and a basic book reservation system.
 
+## Website Map
+![Website Map](assets/img/sitemap.png)
+## Diagram
 
+![Diagram](assets/img/diagram.png)
 
 
 ## Image Credits
